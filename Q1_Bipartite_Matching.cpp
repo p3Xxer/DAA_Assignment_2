@@ -1,4 +1,3 @@
-//SULTAN KO SIRF SULTAN HARA SAKTA HAIN !!
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -88,15 +87,23 @@ int ford_fulkerson(vector<vector<Edge>>& graph, int s, int t) {
 }
 
 int main(){
-    int n, m, s, t;
-    cin >> n >> m >> s >> t;
-    vector<vector<Edge>> graph(n);
-    for (int i = 0; i < m; i++) {
-        int u, v, c;
-        cin >> u >> v >> c;
-        add_edge(u, v, c, graph);
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    cout.tie(NULL);
+    int n, m, k;
+    cin >> n >> m >> k;
+    vector<vector<Edge>> graph(n + m + 2);
+    for (int i = 1; i <= n; i++) {
+        add_edge(0, i, 1, graph);
     }
-    int max_flow = ford_fulkerson(graph, s, t);
-    cout << "Maximum flow: " << max_flow << endl;
-    return 0;   
+    for (int i = 1; i <= m; i++) {
+        add_edge(n + i, n + m + 1, 1, graph);
+    }
+    for (int i = 0; i < k; i++) {
+        int u, v;
+        cin >> u >> v;
+        add_edge(u, n + v, 1, graph);
+    }
+    cout << ford_fulkerson(graph, 0, n + m + 1) << endl;
+    return 0;
 }
