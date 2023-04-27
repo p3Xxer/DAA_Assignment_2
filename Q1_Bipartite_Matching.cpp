@@ -35,7 +35,7 @@ bool bfs(vector<vector<Edge>>& graph, vector<int>& parent, int s, int t) {
         visited[u] = true;
         for (auto& e : graph[u]) {
             int v = e.u;
-            if (!visited[v] && e.capacity > e.flow) {
+            if (!visited[v] && e.capacity > e.flow) { 
                 visited[v] = true;
                 parent[v] = u;
                 q.push(v);
@@ -44,6 +44,8 @@ bool bfs(vector<vector<Edge>>& graph, vector<int>& parent, int s, int t) {
     }
     return visited[t];
 }
+
+
 
 int augment(vector<vector<Edge>>& graph, vector<int>& parent, int s, int t) {
     int n = graph.size();
@@ -86,7 +88,7 @@ int ford_fulkerson(vector<vector<Edge>>& graph, int s, int t) {
     return max_flow;
 }
 
-int main(){
+int main() {
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
     cout.tie(NULL);
@@ -102,7 +104,7 @@ int main(){
     for (int i = 0; i < k; i++) {
         int u, v;
         cin >> u >> v;
-        add_edge(u, n + v, 1, graph);
+        add_edge(u, n + v , 1, graph);
     }
     cout << ford_fulkerson(graph, 0, n + m + 1) << endl;
     return 0;

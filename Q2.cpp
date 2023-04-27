@@ -104,18 +104,31 @@ int main() {
     for (auto x : res.ff) {
         cout << "The starting index is: " << x.ff << " and " << "The ending index is: " << x.ss << endl;
     }
-    cout << "The number of segments are : " << count_partitions(res.ff, n) << endl;
-    int i=1;
-    for(auto x:res.ff){
-        double m = (points[x.ss].second - points[x.ff].second)/(points[x.ss].first - points[x.ff].first);
-        double c = points[x.ff].second - m*points[x.ff].first;
-        if(m!=0){
-            cout<<"Equation of line "<<i<<" is : y = "<<m<<"x + "<<c<<endl;
+    cout << "The number of segments are : " << count_partitions(res.ff, n) << endl; 
+    for (auto x : res.ff) {
+        for (int i = x.ff; i <= x.ss; i++) {
+            cout << "(" << points[i].first << ", " << points[i].second << ") ";
         }
-        else{
-            cout<<"Equation of line "<<i<<" is : x = "<<c<<endl;
-        }
-        i++;
+        cout << endl;
     }
+    for (auto x : res.ff) {
+        double sum_x = 0, sum_y = 0, sum_xy = 0, sum_xx = 0;
+        for (int i = x.ff; i <= x.ss; i++) {
+            sum_x += points[i].first;
+            sum_y += points[i].second;
+            sum_xy += points[i].first * points[i].second;
+            sum_xx += points[i].first * points[i].first;
+        }
+        double n = x.ss - x.ff + 1;
+        double denominator = n * sum_xx - sum_x * sum_x;
+        if (denominator == 0) {
+            cout << "The equation of the line is: " << "x = " << points[x.ff].first << endl;
+        } else {
+            double slope = (n * sum_xy - sum_x * sum_y) / denominator;
+            double intercept = (sum_y - slope * sum_x) / n;
+            cout << "The equation of the line is: " << "y = " << slope << "x + " << intercept << endl;
+        }
+    }
+    
     return 0;
 }
