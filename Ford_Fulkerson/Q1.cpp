@@ -87,7 +87,22 @@ int ford_fulkerson(vector<vector<Edge>>& graph, int s, int t) {
     return max_flow;
 }
 
+void print_graph(vector<vector<Edge>>& graph) {
+    int n = graph.size();
+    for (int u = 0; u < n-1; u++) {
+        cout << u << " : ";
+        for (auto& e : graph[u]) {
+            if (e.flow >= 0) {
+                cout << e.u << " " << e.flow << "/" << e.capacity << " ";
+            }
+        }
+        cout << endl;
+    }
+}
+
 int main(){
+    freopen("testcase1.txt", "r", stdin);
+    freopen("output1.txt", "w+", stdout);
     int n, m, s, t;
     cin >> n >> m >> s >> t;
     vector<vector<Edge>> graph(n);
@@ -98,6 +113,8 @@ int main(){
     }
     int max_flow = ford_fulkerson(graph, s, t);
     cout << "Maximum flow: " << max_flow << endl;
+    cout << "The min s-t cut is: " << max_flow << endl;
+    print_graph(graph);
     return 0;   
 }
 
