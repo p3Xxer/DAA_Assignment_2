@@ -5,3 +5,8 @@ The min s-t cut is: 4
 2 : 1 0/0 4 2/3 
 3 : 5 2/2 
 4 : 5 2/2 
+The min s-t cut is: 
+3->5
+4->5
+The set of vertices that are reachable from s in the residual graph: 0 1 2 3 4 
+The set of vertices that are not reachable from s in the residual graph: 5 

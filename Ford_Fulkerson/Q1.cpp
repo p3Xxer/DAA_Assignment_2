@@ -15,14 +15,12 @@ const ll mod=1e9+7;
 struct Edge {
     int v, u, capacity, flow;
 };
-
 void add_edge(int v, int u, int capacity, vector<vector<Edge>>& graph) {
     Edge e1 = {v, u, capacity, 0};
     Edge e2 = {u, v, 0, 0};
     graph[v].pb(e1);
     graph[u].pb(e2);
 }
-
 bool bfs(vector<vector<Edge>>& graph, vector<int>& parent, int s, int t) {
     int n = graph.size();
     vector<bool> visited(n, false);
@@ -45,7 +43,6 @@ bool bfs(vector<vector<Edge>>& graph, vector<int>& parent, int s, int t) {
     }
     return visited[t];
 }
-
 int augment(vector<vector<Edge>>& graph, vector<int>& parent, int s, int t) {
     int n = graph.size();
     int min_flow = INT_MAX;
@@ -75,7 +72,6 @@ int augment(vector<vector<Edge>>& graph, vector<int>& parent, int s, int t) {
     }
     return min_flow;
 }
-
 int ford_fulkerson(vector<vector<Edge>>& graph, int s, int t) {
     int n = graph.size();
     vector<int> parent(n);
@@ -86,7 +82,6 @@ int ford_fulkerson(vector<vector<Edge>>& graph, int s, int t) {
     }
     return max_flow;
 }
-
 void print_graph(vector<vector<Edge>>& graph) {
     int n = graph.size();
     for (int u = 0; u < n-1; u++) {
@@ -97,6 +92,29 @@ void print_graph(vector<vector<Edge>>& graph) {
             }
         }
         cout << endl;
+    }
+}
+void dfs(vector<vector<Edge>>& graph, vector<bool>& visited, int s) {
+    visited[s] = true;
+    for (auto& e : graph[s]) {
+        if (!visited[e.u] && e.capacity > e.flow) {
+            dfs(graph, visited, e.u);
+        }
+    }
+}
+void print_cut(vector<vector<Edge>>& graph, int s, int t) {
+    int n = graph.size();
+    vector<bool> visited(n, false);
+    dfs(graph, visited, s);
+    cout << "The min s-t cut is: " << endl;
+    for (int u = 0; u < n; u++) {
+        if (visited[u]) {
+            for (auto& e : graph[u]) {
+                if (!visited[e.u]) {
+                    cout << u << "->" << e.u << endl;
+                }
+            }
+        }
     }
 }
 
@@ -115,6 +133,23 @@ int main(){
     cout << "Maximum flow: " << max_flow << endl;
     cout << "The min s-t cut is: " << max_flow << endl;
     print_graph(graph);
+    print_cut(graph, s, t);
+    vector<bool> visited(n, false);
+    dfs(graph, visited, s);
+    cout << "The set of vertices that are reachable from s in the residual graph: ";
+    for (int i = 0; i < n; i++) {
+        if (visited[i]) {
+            cout << i << " ";
+        }
+    }
+    cout << endl;
+    cout << "The set of vertices that are not reachable from s in the residual graph: ";
+    for (int i = 0; i < n; i++) {
+        if (!visited[i]) {
+            cout << i << " ";
+        }
+    }
+    cout << endl;
     return 0;   
 }
 
