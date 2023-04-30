@@ -1,12 +1,12 @@
-Maximum flow: 4
-The min s-t cut is: 4
-0 : 1 2/3 2 2/2 
-1 : 2 0/1 3 2/3 
-2 : 1 0/0 4 2/3 
-3 : 5 2/2 
-4 : 5 2/2 
+Maximum flow: 12
+The min s-t cut is: 12
+0 : 1 12/16 2 0/13 4 0/0 4 0/0 
+1 : 2 0/10 3 12/12 2 0/0 
+2 : 0 0/0 1 0/0 1 0/4 4 0/14 3 0/0 
+3 : 2 0/9 5 12/20 
+4 : 2 0/0 0 0/20 0 0/20 
 The min s-t cut is: 
-3->5
-4->5
-The set of vertices that are reachable from s in the residual graph: 0 1 2 3 4 
-The set of vertices that are not reachable from s in the residual graph: 5 
+1->3
+2->3
+The set of vertices that are reachable from s in the residual graph: 0 1 2 4 
+The set of vertices that are not reachable from s in the residual graph: 3 5 

@@ -24,15 +24,15 @@
 \DoxyCodeLine{\Hypertarget{_q2_8cpp_source_l00026}00026\ }
 \DoxyCodeLine{\Hypertarget{_q2_8cpp_source_l00027}00027\ \textcolor{keyword}{using\ namespace\ }std;}
 \DoxyCodeLine{\Hypertarget{_q2_8cpp_source_l00028}00028\ }
-\DoxyCodeLine{\Hypertarget{_q2_8cpp_source_l00029}\mbox{\hyperlink{_q2_8cpp_ae1d1ec9482079231e898236e2b23c9ba}{00029}}\ \textcolor{preprocessor}{\#define\ ll\ long\ long\ int}}
-\DoxyCodeLine{\Hypertarget{_q2_8cpp_source_l00030}\mbox{\hyperlink{_q2_8cpp_a600eaf353befc174637855795f12d258}{00030}}\ \textcolor{preprocessor}{\#define\ endl\ "{}\(\backslash\)n"{}}}
-\DoxyCodeLine{\Hypertarget{_q2_8cpp_source_l00031}\mbox{\hyperlink{_q2_8cpp_a276c5a0e984cf60015b27252fe04fe6b}{00031}}\ \textcolor{preprocessor}{\#define\ pb\ push\_back}}
-\DoxyCodeLine{\Hypertarget{_q2_8cpp_source_l00032}\mbox{\hyperlink{_q2_8cpp_a67d84a762be4682d311cad2d7dc4685f}{00032}}\ \textcolor{preprocessor}{\#define\ ppb\ pop\_back}}
-\DoxyCodeLine{\Hypertarget{_q2_8cpp_source_l00033}\mbox{\hyperlink{_q2_8cpp_aea466a7139309b17bce61d5ccb03e195}{00033}}\ \textcolor{preprocessor}{\#define\ mp\ make\_pair}}
-\DoxyCodeLine{\Hypertarget{_q2_8cpp_source_l00034}\mbox{\hyperlink{_q2_8cpp_a15b03a2c9444e03de6e8e618cd9006cb}{00034}}\ \textcolor{preprocessor}{\#define\ ff\ first}}
-\DoxyCodeLine{\Hypertarget{_q2_8cpp_source_l00035}\mbox{\hyperlink{_q2_8cpp_a74d3c3c85d450f9238a162d015c0b407}{00035}}\ \textcolor{preprocessor}{\#define\ ss\ second}}
-\DoxyCodeLine{\Hypertarget{_q2_8cpp_source_l00036}\mbox{\hyperlink{_q2_8cpp_abcecb52cfca390874e4ff75904153ebe}{00036}}\ \textcolor{keyword}{const}\ \mbox{\hyperlink{_q2_8cpp_ae1d1ec9482079231e898236e2b23c9ba}{ll}}\ \mbox{\hyperlink{_q2_8cpp_abcecb52cfca390874e4ff75904153ebe}{inf}}\ =\ 1e18;}
-\DoxyCodeLine{\Hypertarget{_q2_8cpp_source_l00037}\mbox{\hyperlink{_q2_8cpp_ab235c0a809104a386f008dc5320af70c}{00037}}\ \textcolor{keyword}{const}\ \mbox{\hyperlink{_q2_8cpp_ae1d1ec9482079231e898236e2b23c9ba}{ll}}\ \mbox{\hyperlink{_q2_8cpp_ab235c0a809104a386f008dc5320af70c}{mod}}\ =\ 1e9\ +\ 7;}
+\DoxyCodeLine{\Hypertarget{_q2_8cpp_source_l00029}00029\ \textcolor{preprocessor}{\#define\ ll\ long\ long\ int}}
+\DoxyCodeLine{\Hypertarget{_q2_8cpp_source_l00030}00030\ \textcolor{preprocessor}{\#define\ endl\ "{}\(\backslash\)n"{}}}
+\DoxyCodeLine{\Hypertarget{_q2_8cpp_source_l00031}00031\ \textcolor{preprocessor}{\#define\ pb\ push\_back}}
+\DoxyCodeLine{\Hypertarget{_q2_8cpp_source_l00032}00032\ \textcolor{preprocessor}{\#define\ ppb\ pop\_back}}
+\DoxyCodeLine{\Hypertarget{_q2_8cpp_source_l00033}00033\ \textcolor{preprocessor}{\#define\ mp\ make\_pair}}
+\DoxyCodeLine{\Hypertarget{_q2_8cpp_source_l00034}00034\ \textcolor{preprocessor}{\#define\ ff\ first}}
+\DoxyCodeLine{\Hypertarget{_q2_8cpp_source_l00035}00035\ \textcolor{preprocessor}{\#define\ ss\ second}}
+\DoxyCodeLine{\Hypertarget{_q2_8cpp_source_l00036}00036\ \textcolor{keyword}{const}\ ll\ inf\ =\ 1e18;}
+\DoxyCodeLine{\Hypertarget{_q2_8cpp_source_l00037}00037\ \textcolor{keyword}{const}\ ll\ mod\ =\ 1e9\ +\ 7;}
 \DoxyCodeLine{\Hypertarget{_q2_8cpp_source_l00038}00038\ }
 \DoxyCodeLine{\Hypertarget{_q2_8cpp_source_l00047}\mbox{\hyperlink{_q2_8cpp_a86c5df5101f24e64608a13f753d13933}{00047}}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{_q2_8cpp_a86c5df5101f24e64608a13f753d13933}{cost}}(vector<pair<double,\ double>>\&\ points,\ \textcolor{keywordtype}{int}\ i,\ \textcolor{keywordtype}{int}\ j,\ \textcolor{keywordtype}{double}\ c)\ \{}
 \DoxyCodeLine{\Hypertarget{_q2_8cpp_source_l00048}00048\ \ \ \ \ \textcolor{keywordtype}{double}\ sum\_x\ =\ 0,\ sum\_y\ =\ 0,\ sum\_xy\ =\ 0,\ sum\_xx\ =\ 0;}
@@ -125,16 +125,16 @@
 \DoxyCodeLine{\Hypertarget{_q2_8cpp_source_l00156}00156\ \ \ \ \ \ \ \ \ cin\ >>\ points[i].first\ >>\ points[i].second;}
 \DoxyCodeLine{\Hypertarget{_q2_8cpp_source_l00157}00157\ \ \ \ \ \}}
 \DoxyCodeLine{\Hypertarget{_q2_8cpp_source_l00158}00158\ \ \ \ \ pair<vector<pair<int,\ int>>,\ \textcolor{keywordtype}{double}>\ res\ =\ \mbox{\hyperlink{_q2_8cpp_a98a2c2cbb394353fdbe297f686a52770}{segmented\_least\_squares}}(points,\ c);}
-\DoxyCodeLine{\Hypertarget{_q2_8cpp_source_l00159}00159\ \ \ \ \ cout\ <<\ fixed\ <<\ setprecision(2)\ <<\ \textcolor{stringliteral}{"{}The\ final\ cost\ of\ segments\ is:\ "{}}\ <<\ res.ss\ <<\ \mbox{\hyperlink{_q2_8cpp_a600eaf353befc174637855795f12d258}{endl}};}
+\DoxyCodeLine{\Hypertarget{_q2_8cpp_source_l00159}00159\ \ \ \ \ cout\ <<\ fixed\ <<\ setprecision(2)\ <<\ \textcolor{stringliteral}{"{}The\ final\ cost\ of\ segments\ is:\ "{}}\ <<\ res.ss\ <<\ endl;}
 \DoxyCodeLine{\Hypertarget{_q2_8cpp_source_l00160}00160\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{auto}\ x\ :\ res.ff)\ \{}
-\DoxyCodeLine{\Hypertarget{_q2_8cpp_source_l00161}00161\ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}The\ starting\ index\ is:\ "{}}\ <<\ x.ff\ <<\ \textcolor{stringliteral}{"{}\ and\ "{}}\ <<\ \textcolor{stringliteral}{"{}The\ ending\ index\ is:\ "{}}\ <<\ x.ss\ <<\ \mbox{\hyperlink{_q2_8cpp_a600eaf353befc174637855795f12d258}{endl}};}
+\DoxyCodeLine{\Hypertarget{_q2_8cpp_source_l00161}00161\ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}The\ starting\ index\ is:\ "{}}\ <<\ x.ff\ <<\ \textcolor{stringliteral}{"{}\ and\ "{}}\ <<\ \textcolor{stringliteral}{"{}The\ ending\ index\ is:\ "{}}\ <<\ x.ss\ <<\ endl;}
 \DoxyCodeLine{\Hypertarget{_q2_8cpp_source_l00162}00162\ \ \ \ \ \}}
-\DoxyCodeLine{\Hypertarget{_q2_8cpp_source_l00163}00163\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}The\ number\ of\ segments\ are\ :\ "{}}\ <<\ \mbox{\hyperlink{_q2_8cpp_ac43130abece1195c3fd0b1d08f29efec}{count\_partitions}}(res.ff,\ n)\ <<\ \mbox{\hyperlink{_q2_8cpp_a600eaf353befc174637855795f12d258}{endl}};\ }
+\DoxyCodeLine{\Hypertarget{_q2_8cpp_source_l00163}00163\ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}The\ number\ of\ segments\ are\ :\ "{}}\ <<\ \mbox{\hyperlink{_q2_8cpp_ac43130abece1195c3fd0b1d08f29efec}{count\_partitions}}(res.ff,\ n)\ <<\ endl;\ }
 \DoxyCodeLine{\Hypertarget{_q2_8cpp_source_l00164}00164\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{auto}\ x\ :\ res.ff)\ \{}
 \DoxyCodeLine{\Hypertarget{_q2_8cpp_source_l00165}00165\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ x.ff;\ i\ <=\ x.ss;\ i++)\ \{}
 \DoxyCodeLine{\Hypertarget{_q2_8cpp_source_l00166}00166\ \ \ \ \ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}("{}}\ <<\ points[i].first\ <<\ \textcolor{stringliteral}{"{},\ "{}}\ <<\ points[i].second\ <<\ \textcolor{stringliteral}{"{})\ "{}};}
 \DoxyCodeLine{\Hypertarget{_q2_8cpp_source_l00167}00167\ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{\Hypertarget{_q2_8cpp_source_l00168}00168\ \ \ \ \ \ \ \ \ cout\ <<\ \mbox{\hyperlink{_q2_8cpp_a600eaf353befc174637855795f12d258}{endl}};}
+\DoxyCodeLine{\Hypertarget{_q2_8cpp_source_l00168}00168\ \ \ \ \ \ \ \ \ cout\ <<\ endl;}
 \DoxyCodeLine{\Hypertarget{_q2_8cpp_source_l00169}00169\ \ \ \ \ \}}
 \DoxyCodeLine{\Hypertarget{_q2_8cpp_source_l00170}00170\ }
 \DoxyCodeLine{\Hypertarget{_q2_8cpp_source_l00171}00171\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{auto}\ x\ :\ res.ff)\ \{}
@@ -148,15 +148,15 @@
 \DoxyCodeLine{\Hypertarget{_q2_8cpp_source_l00179}00179\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ n\ =\ x.ss\ -\/\ x.ff\ +\ 1;}
 \DoxyCodeLine{\Hypertarget{_q2_8cpp_source_l00180}00180\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ denominator\ =\ n\ *\ sum\_xx\ -\/\ sum\_x\ *\ sum\_x;}
 \DoxyCodeLine{\Hypertarget{_q2_8cpp_source_l00181}00181\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (denominator\ ==\ 0)\ \{}
-\DoxyCodeLine{\Hypertarget{_q2_8cpp_source_l00182}00182\ \ \ \ \ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}The\ equation\ of\ the\ line\ is:\ "{}}\ <<\ \textcolor{stringliteral}{"{}x\ =\ "{}}\ <<\ points[x.ff].first\ <<\ \mbox{\hyperlink{_q2_8cpp_a600eaf353befc174637855795f12d258}{endl}};}
+\DoxyCodeLine{\Hypertarget{_q2_8cpp_source_l00182}00182\ \ \ \ \ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}The\ equation\ of\ the\ line\ is:\ "{}}\ <<\ \textcolor{stringliteral}{"{}x\ =\ "{}}\ <<\ points[x.ff].first\ <<\ endl;}
 \DoxyCodeLine{\Hypertarget{_q2_8cpp_source_l00183}00183\ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
 \DoxyCodeLine{\Hypertarget{_q2_8cpp_source_l00184}00184\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ slope\ =\ (n\ *\ sum\_xy\ -\/\ sum\_x\ *\ sum\_y)\ /\ denominator;}
 \DoxyCodeLine{\Hypertarget{_q2_8cpp_source_l00185}00185\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ intercept\ =\ (sum\_y\ -\/\ slope\ *\ sum\_x)\ /\ n;}
 \DoxyCodeLine{\Hypertarget{_q2_8cpp_source_l00186}00186\ \ \ \ \ \ \ \ \ \ \ \ \ ofstream\ out;}
 \DoxyCodeLine{\Hypertarget{_q2_8cpp_source_l00187}00187\ \ \ \ \ \ \ \ \ \ \ \ \ out.open(\textcolor{stringliteral}{"{}equations.txt"{}},\ ios::app);}
-\DoxyCodeLine{\Hypertarget{_q2_8cpp_source_l00188}00188\ \ \ \ \ \ \ \ \ \ \ \ \ out\ <<\ slope\ <<\ \textcolor{stringliteral}{"{}*x+"{}}\ <<\ intercept\ <<\ \mbox{\hyperlink{_q2_8cpp_a600eaf353befc174637855795f12d258}{endl}};}
+\DoxyCodeLine{\Hypertarget{_q2_8cpp_source_l00188}00188\ \ \ \ \ \ \ \ \ \ \ \ \ out\ <<\ slope\ <<\ \textcolor{stringliteral}{"{}*x+"{}}\ <<\ intercept\ <<\ endl;}
 \DoxyCodeLine{\Hypertarget{_q2_8cpp_source_l00189}00189\ \ \ \ \ \ \ \ \ \ \ \ \ out.close();}
-\DoxyCodeLine{\Hypertarget{_q2_8cpp_source_l00190}00190\ \ \ \ \ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}The\ equation\ of\ the\ line\ is:\ "{}}\ <<\ \textcolor{stringliteral}{"{}y\ =\ "{}}\ <<\ slope\ <<\ \textcolor{stringliteral}{"{}x\ +\ "{}}\ <<\ intercept\ <<\ \mbox{\hyperlink{_q2_8cpp_a600eaf353befc174637855795f12d258}{endl}};}
+\DoxyCodeLine{\Hypertarget{_q2_8cpp_source_l00190}00190\ \ \ \ \ \ \ \ \ \ \ \ \ cout\ <<\ \textcolor{stringliteral}{"{}The\ equation\ of\ the\ line\ is:\ "{}}\ <<\ \textcolor{stringliteral}{"{}y\ =\ "{}}\ <<\ slope\ <<\ \textcolor{stringliteral}{"{}x\ +\ "{}}\ <<\ intercept\ <<\ endl;}
 \DoxyCodeLine{\Hypertarget{_q2_8cpp_source_l00191}00191\ \ \ \ \ \ \ \ \ \}}
 \DoxyCodeLine{\Hypertarget{_q2_8cpp_source_l00192}00192\ \ \ \ \ \}}
 \DoxyCodeLine{\Hypertarget{_q2_8cpp_source_l00193}00193\ }
