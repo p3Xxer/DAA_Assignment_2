@@ -5,7 +5,7 @@
 /** @mainpage Analysis of the code
  *
  * @authors Jeet Shah 2020A7PS0155H
- * @authors Rahil Amish Sanghavi 2020A7PS2047H
+ * @authors Rahil Amish Sanghavi 2020A7PS2052H
  * @authors Luv Ghilothia 2020A7PS1700H
  * @authors Khushil Kataria 2020A7PS2086H
  *
