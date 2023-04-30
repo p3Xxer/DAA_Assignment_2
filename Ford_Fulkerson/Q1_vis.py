@@ -1,3 +1,6 @@
+"""
+This file is used to visualize the result of Line Ford-Fulkerson Algorithm.
+"""
 import tkinter as tk
 from tkinter import filedialog
 from tkinter import messagebox
