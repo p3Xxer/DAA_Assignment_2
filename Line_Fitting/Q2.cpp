@@ -92,6 +92,9 @@ int main() {
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
     cout.tie(NULL);
+    // take input from points.txt
+    freopen("points.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
     int n;
     double c;
     cin >> n >> c;
@@ -111,6 +114,7 @@ int main() {
         }
         cout << endl;
     }
+
     for (auto x : res.ff) {
         double sum_x = 0, sum_y = 0, sum_xy = 0, sum_xx = 0;
         for (int i = x.ff; i <= x.ss; i++) {
@@ -126,6 +130,10 @@ int main() {
         } else {
             double slope = (n * sum_xy - sum_x * sum_y) / denominator;
             double intercept = (sum_y - slope * sum_x) / n;
+            ofstream out;
+            out.open("equations.txt", ios::app);
+            out << slope << "*x+" << intercept << endl;
+            out.close();
             cout << "The equation of the line is: " << "y = " << slope << "x + " << intercept << endl;
         }
     }
