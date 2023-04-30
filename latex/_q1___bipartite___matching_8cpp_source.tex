@@ -23,19 +23,19 @@
 \DoxyCodeLine{\Hypertarget{_q1___bipartite___matching_8cpp_source_l00025}00025\ \textcolor{preprocessor}{\#include\ <vector>}}
 \DoxyCodeLine{\Hypertarget{_q1___bipartite___matching_8cpp_source_l00026}00026\ }
 \DoxyCodeLine{\Hypertarget{_q1___bipartite___matching_8cpp_source_l00027}00027\ \textcolor{keyword}{using\ namespace\ }std;}
-\DoxyCodeLine{\Hypertarget{_q1___bipartite___matching_8cpp_source_l00028}\mbox{\hyperlink{_q1___bipartite___matching_8cpp_ae1d1ec9482079231e898236e2b23c9ba}{00028}}\ \textcolor{preprocessor}{\#define\ ll\ long\ long\ int}}
-\DoxyCodeLine{\Hypertarget{_q1___bipartite___matching_8cpp_source_l00029}\mbox{\hyperlink{_q1___bipartite___matching_8cpp_a600eaf353befc174637855795f12d258}{00029}}\ \textcolor{preprocessor}{\#define\ endl\ "{}\(\backslash\)n"{}}}
-\DoxyCodeLine{\Hypertarget{_q1___bipartite___matching_8cpp_source_l00030}\mbox{\hyperlink{_q1___bipartite___matching_8cpp_a276c5a0e984cf60015b27252fe04fe6b}{00030}}\ \textcolor{preprocessor}{\#define\ pb\ push\_back}}
-\DoxyCodeLine{\Hypertarget{_q1___bipartite___matching_8cpp_source_l00031}\mbox{\hyperlink{_q1___bipartite___matching_8cpp_a67d84a762be4682d311cad2d7dc4685f}{00031}}\ \textcolor{preprocessor}{\#define\ ppb\ pop\_back}}
-\DoxyCodeLine{\Hypertarget{_q1___bipartite___matching_8cpp_source_l00032}\mbox{\hyperlink{_q1___bipartite___matching_8cpp_aea466a7139309b17bce61d5ccb03e195}{00032}}\ \textcolor{preprocessor}{\#define\ mp\ make\_pair}}
-\DoxyCodeLine{\Hypertarget{_q1___bipartite___matching_8cpp_source_l00033}\mbox{\hyperlink{_q1___bipartite___matching_8cpp_a15b03a2c9444e03de6e8e618cd9006cb}{00033}}\ \textcolor{preprocessor}{\#define\ ff\ first}}
-\DoxyCodeLine{\Hypertarget{_q1___bipartite___matching_8cpp_source_l00034}\mbox{\hyperlink{_q1___bipartite___matching_8cpp_a74d3c3c85d450f9238a162d015c0b407}{00034}}\ \textcolor{preprocessor}{\#define\ ss\ second}}
-\DoxyCodeLine{\Hypertarget{_q1___bipartite___matching_8cpp_source_l00035}\mbox{\hyperlink{_q1___bipartite___matching_8cpp_abcecb52cfca390874e4ff75904153ebe}{00035}}\ \textcolor{keyword}{const}\ \mbox{\hyperlink{_q1___bipartite___matching_8cpp_ae1d1ec9482079231e898236e2b23c9ba}{ll}}\ \mbox{\hyperlink{_q1___bipartite___matching_8cpp_abcecb52cfca390874e4ff75904153ebe}{inf}}\ =\ 1e18;}
-\DoxyCodeLine{\Hypertarget{_q1___bipartite___matching_8cpp_source_l00036}\mbox{\hyperlink{_q1___bipartite___matching_8cpp_ab235c0a809104a386f008dc5320af70c}{00036}}\ \textcolor{keyword}{const}\ \mbox{\hyperlink{_q1___bipartite___matching_8cpp_ae1d1ec9482079231e898236e2b23c9ba}{ll}}\ \mbox{\hyperlink{_q1___bipartite___matching_8cpp_ab235c0a809104a386f008dc5320af70c}{mod}}\ =\ 1e9\ +\ 7;}
+\DoxyCodeLine{\Hypertarget{_q1___bipartite___matching_8cpp_source_l00028}00028\ \textcolor{preprocessor}{\#define\ ll\ long\ long\ int}}
+\DoxyCodeLine{\Hypertarget{_q1___bipartite___matching_8cpp_source_l00029}00029\ \textcolor{preprocessor}{\#define\ endl\ "{}\(\backslash\)n"{}}}
+\DoxyCodeLine{\Hypertarget{_q1___bipartite___matching_8cpp_source_l00030}00030\ \textcolor{preprocessor}{\#define\ pb\ push\_back}}
+\DoxyCodeLine{\Hypertarget{_q1___bipartite___matching_8cpp_source_l00031}00031\ \textcolor{preprocessor}{\#define\ ppb\ pop\_back}}
+\DoxyCodeLine{\Hypertarget{_q1___bipartite___matching_8cpp_source_l00032}00032\ \textcolor{preprocessor}{\#define\ mp\ make\_pair}}
+\DoxyCodeLine{\Hypertarget{_q1___bipartite___matching_8cpp_source_l00033}00033\ \textcolor{preprocessor}{\#define\ ff\ first}}
+\DoxyCodeLine{\Hypertarget{_q1___bipartite___matching_8cpp_source_l00034}00034\ \textcolor{preprocessor}{\#define\ ss\ second}}
+\DoxyCodeLine{\Hypertarget{_q1___bipartite___matching_8cpp_source_l00035}00035\ \textcolor{keyword}{const}\ ll\ inf\ =\ 1e18;}
+\DoxyCodeLine{\Hypertarget{_q1___bipartite___matching_8cpp_source_l00036}00036\ \textcolor{keyword}{const}\ ll\ mod\ =\ 1e9\ +\ 7;}
 \DoxyCodeLine{\Hypertarget{_q1___bipartite___matching_8cpp_source_l00037}00037\ }
 \DoxyCodeLine{\Hypertarget{_q1___bipartite___matching_8cpp_source_l00046}00046\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_edge}{Edge}}}
 \DoxyCodeLine{\Hypertarget{_q1___bipartite___matching_8cpp_source_l00047}00047\ \{}
-\DoxyCodeLine{\Hypertarget{_q1___bipartite___matching_8cpp_source_l00048}00048\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_edge_aac59de4b133921591182667a1e656e18}{v}},\ \mbox{\hyperlink{struct_edge_a60a34279415f9bff8844f0c0a8675ae3}{u}},\ \mbox{\hyperlink{struct_edge_ad606e57bc68898672de1727e299a7d65}{capacity}},\ \mbox{\hyperlink{struct_edge_a189258d91c07f4a0b76798cb7fe2b112}{flow}};}
+\DoxyCodeLine{\Hypertarget{_q1___bipartite___matching_8cpp_source_l00048}00048\ \ \ \ \ \textcolor{keywordtype}{int}\ v,\ u,\ capacity,\ flow;}
 \DoxyCodeLine{\Hypertarget{_q1___bipartite___matching_8cpp_source_l00049}00049\ \};}
 \DoxyCodeLine{\Hypertarget{_q1___bipartite___matching_8cpp_source_l00050}00050\ }
 \DoxyCodeLine{\Hypertarget{_q1___bipartite___matching_8cpp_source_l00059}\mbox{\hyperlink{_q1___bipartite___matching_8cpp_a8659eb080960e0ed196a2d44b61f57d2}{00059}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{_q1___bipartite___matching_8cpp_a8659eb080960e0ed196a2d44b61f57d2}{add\_edge}}(\textcolor{keywordtype}{int}\ v,\ \textcolor{keywordtype}{int}\ u,\ \textcolor{keywordtype}{int}\ capacity,\ vector<vector<Edge>>\ \&graph)}
@@ -147,7 +147,7 @@
 \DoxyCodeLine{\Hypertarget{_q1___bipartite___matching_8cpp_source_l00194}00194\ \ \ \ \ \ \ \ \ cin\ >>\ u\ >>\ v;}
 \DoxyCodeLine{\Hypertarget{_q1___bipartite___matching_8cpp_source_l00195}00195\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_q1___bipartite___matching_8cpp_a8659eb080960e0ed196a2d44b61f57d2}{add\_edge}}(u,\ n\ +\ v,\ 1,\ graph);}
 \DoxyCodeLine{\Hypertarget{_q1___bipartite___matching_8cpp_source_l00196}00196\ \ \ \ \ \}}
-\DoxyCodeLine{\Hypertarget{_q1___bipartite___matching_8cpp_source_l00197}00197\ \ \ \ \ cout\ <<\ \mbox{\hyperlink{_q1___bipartite___matching_8cpp_a31be8702d01476863afe7fe5894b86be}{ford\_fulkerson}}(graph,\ 0,\ n\ +\ m\ +\ 1)\ <<\ \mbox{\hyperlink{_q1___bipartite___matching_8cpp_a600eaf353befc174637855795f12d258}{endl}};}
+\DoxyCodeLine{\Hypertarget{_q1___bipartite___matching_8cpp_source_l00197}00197\ \ \ \ \ cout\ <<\ \mbox{\hyperlink{_q1___bipartite___matching_8cpp_a31be8702d01476863afe7fe5894b86be}{ford\_fulkerson}}(graph,\ 0,\ n\ +\ m\ +\ 1)\ <<\ endl;}
 \DoxyCodeLine{\Hypertarget{_q1___bipartite___matching_8cpp_source_l00198}00198\ \ \ \ \ \textcolor{keywordflow}{return}\ 0;}
 \DoxyCodeLine{\Hypertarget{_q1___bipartite___matching_8cpp_source_l00199}00199\ \}}
 

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['ford_5ffulkerson_0',['ford_fulkerson',['../_q1_8cpp.html#a31be8702d01476863afe7fe5894b86be',1,'ford_fulkerson(vector&lt; vector&lt; Edge &gt; &gt; &amp;graph, int s, int t):&#160;Q1.cpp'],['../_q1___bipartite___matching_8cpp.html#a31be8702d01476863afe7fe5894b86be',1,'ford_fulkerson(vector&lt; vector&lt; Edge &gt; &gt; &amp;graph, int s, int t):&#160;Q1_Bipartite_Matching.cpp'],['../namespace_q1__vis.html#aa85055ffd5381e3b7d87e69e30b60a82',1,'Q1_vis.ford_fulkerson()']]]
+  ['print_5fcut_0',['print_cut',['../_q1_8cpp.html#ab39cfd8097e0f67770b94b2864a1f51b',1,'Q1.cpp']]],
+  ['print_5fgraph_1',['print_graph',['../_q1_8cpp.html#a7164e55c0bb3cfa2fe794d82eaabc937',1,'Q1.cpp']]]
 ];

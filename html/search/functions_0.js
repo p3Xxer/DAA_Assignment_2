@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['_5f_5finit_5f_5f_0',['__init__',['../class_q1__vis_1_1_edge.html#af7d2a00d0d322b67a021b1b070cb2602',1,'Q1_vis.Edge.__init__()'],['../class_q1__vis_1_1_app.html#a2fb090773c6ba74c835c5bb19483e1d6',1,'Q1_vis.App.__init__()']]]
+  ['add_5fedge_0',['add_edge',['../_q1_8cpp.html#a8659eb080960e0ed196a2d44b61f57d2',1,'add_edge(int v, int u, int capacity, vector&lt; vector&lt; Edge &gt; &gt; &amp;graph):&#160;Q1.cpp'],['../_q1___bipartite___matching_8cpp.html#a8659eb080960e0ed196a2d44b61f57d2',1,'add_edge(int v, int u, int capacity, vector&lt; vector&lt; Edge &gt; &gt; &amp;graph):&#160;Q1_Bipartite_Matching.cpp']]],
+  ['augment_1',['augment',['../_q1_8cpp.html#a3b4d685998b36a8bf0b979fe085d018e',1,'augment(vector&lt; vector&lt; Edge &gt; &gt; &amp;graph, vector&lt; int &gt; &amp;parent, int s, int t):&#160;Q1.cpp'],['../_q1___bipartite___matching_8cpp.html#a3b4d685998b36a8bf0b979fe085d018e',1,'augment(vector&lt; vector&lt; Edge &gt; &gt; &amp;graph, vector&lt; int &gt; &amp;parent, int s, int t):&#160;Q1_Bipartite_Matching.cpp']]]
 ];
